@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.30/esri/copyright.txt for details.
+//>>built
+define("esri/dijit/geoenrichment/ReportPlayer/core/conversion/portalToEditorUtils/metadata/VariableScriptCollector",["esri/dijit/geoenrichment/utils/JsonXmlConverter","../variables/VariableUtil"],function(f,h){var g={getObjects:function(a,d){d=g._getVariableInfo(a,d);a=g._getScriptObjects(a,d.fieldNameToVariableCache);return{variables:d.variables,variableObjects:d.variableObjects,scriptObjects:a}},_getVariableInfo:function(a,d){var e=[];f.queryJson(a,d?/^(RawFields|Fields)$/:"Fields").forEach(function(b){e=
+e.concat(f.queryJson(b,/^(Field|PortalField)$/))});var k=[],c=[],l={};e.forEach(function(b){k.push(b.attributes.MapTo);if(b=h.fieldTagToVariable(b,a.attributes.Name))l[b.fieldName]=b,c.push(b)});return{variables:k,variableObjects:c,fieldNameToVariableCache:l}},_getScriptObjects:function(a,d){var e=f.queryJson(a,"CalculatedFields")[0];return(e&&f.queryJson(e,"Script")||[]).map(function(e){var c=h.scriptTagToVariable(e,a.attributes.Name);c.usedFields&&(c.usedMapTos=[],c.usedFields.forEach(function(a){var b=
+d[a];b?b.usedMapTos?c.usedMapTos=c.usedMapTos.concat(b.usedMapTos):c.usedMapTos.push(b.fullName):console.log("Error parsing used fields for "+a)}),d[c.fieldName]=c);return c})}};return g});

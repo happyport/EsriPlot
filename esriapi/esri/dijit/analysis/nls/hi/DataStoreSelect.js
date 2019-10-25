@@ -1,0 +1,4 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.30/esri/copyright.txt for details.
+//>>built
+define("esri/dijit/analysis/nls/hi/DataStoreSelect",{relationalDS:"\u0938\u0902\u092c\u0902\u0927\u092a\u0930\u0915",spatialDS:"\u0938\u092e\u092f \u0914\u0930 \u0938\u094d\u0925\u093e\u0928 \u0926\u094b\u0928\u094b\u0902 \u092e\u0947\u0902 \u092e\u094c\u091c\u0942\u0926",agsDataStore:"ArcGIS \u0921\u0947\u091f\u093e \u0938\u094d\u091f\u094b\u0930",bdfsTemplates:"\u092c\u093f\u0917 \u0921\u0947\u091f\u093e \u095e\u093e\u0907\u0932 \u0936\u0947\u092f\u0930 \u0906\u0909\u091f\u092a\u0941\u091f \u091f\u0947\u092e\u094d\u092a\u0932\u0947\u091f"});

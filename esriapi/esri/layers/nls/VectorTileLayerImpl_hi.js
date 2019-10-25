@@ -1,0 +1,6 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.30/esri/copyright.txt for details.
+//>>built
+define("esri/layers/nls/VectorTileLayerImpl_hi",{"esri/layers/vectorTiles/nls/common":{_localized:{}},"dijit/nls/loading":{loadingState:"\u0932\u094b\u0921 \u0915\u093f\u092f\u093e \u091c\u093e \u0930\u0939\u093e \u0939\u0948...",errorState:"\u0915\u094d\u0937\u092e\u093e \u0915\u0930\u0947\u0902, \u0915\u094b\u0908 \u0924\u094d\u0930\u0941\u091f\u093f \u0906\u0908",_localized:{}},"dijit/nls/common":{buttonOk:"\u0920\u0940\u0915 \u0939\u0948",buttonCancel:"\u0930\u0926\u094d\u0926 \u0915\u0930\u0947\u0902",
+buttonSave:"\u0938\u0939\u0947\u091c\u0947\u0902",itemClose:"\u092c\u0902\u0926 \u0915\u0930\u0947\u0902",_localized:{}},"dijit/form/nls/validate":{invalidMessage:"\u0926\u0930\u094d\u091c \u0915\u0940 \u0917\u0908 \u0938\u0902\u0916\u094d\u092f\u093e \u092e\u093e\u0928\u094d\u092f \u0928\u0939\u0940\u0902 \u0939\u0948\u0964",missingMessage:"\u092f\u0939 \u092e\u093e\u0928 \u0905\u0928\u093f\u0935\u093e\u0930\u094d\u092f \u0939\u0948.",rangeMessage:"\u092f\u0939 \u092e\u093e\u0928 \u0930\u0947\u0902\u091c \u0938\u0947 \u092c\u093e\u0939\u0930 \u0939\u0948\u0964",
+_localized:{}}});

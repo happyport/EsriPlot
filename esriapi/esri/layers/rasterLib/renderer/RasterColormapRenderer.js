@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.30/esri/copyright.txt for details.
+//>>built
+define("esri/layers/rasterLib/renderer/RasterColormapRenderer",["dojo/_base/declare","dojo/_base/lang","./RasterRenderer","../function/ColormapFunction"],function(b,e,c,d){return b([c],{declaredClass:"esri.layers.rasterLib.renderer.RasterColormapRenderer",rendererName:"Colormap",renderTexture:!0,constructor:function(a){this._function=new d(a);this._function.outputPixelType="U8"},draw2D:function(a){this._updateColormapParameters();a=this._clonePixelData(a);return a=this._function._colorize(a)},drawGL:function(a){this._updateColormapParameters();
+this._function._colorizeGL(a)},toJson:function(){var a=this._function.toJson().rasterFunctionArguments;return{rendererName:this.rendererName,rendererArguments:a}},_updateColormapParameters:function(){var a=this._function.functionArguments;a.colormap=this.colormap;a.colormapName=this.colormapName;a.colorRamp=this.colorRamp;a.colorRampName=this.colorRampName}})});

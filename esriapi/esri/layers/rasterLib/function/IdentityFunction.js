@@ -1,0 +1,5 @@
+// All material copyright ESRI, All Rights Reserved, unless otherwise specified.
+// See http://js.arcgis.com/3.30/esri/copyright.txt for details.
+//>>built
+define("esri/layers/rasterLib/function/IdentityFunction",["dojo/_base/declare","dojo/_base/lang","./pixelShaders","./RasterFunctionX","./RasterFunctionWebGLMixin"],function(b,d,e,f,g){return b([f,g],{declaredClass:"esri.layers.rasterLib.function.IdentityFunction",functionName:"Identity",supportWebGL:!0,support2D:!0,constructor:function(a){this.functionArguments={raster:null}},bind:function(a){a=this.getSourceRasterInfo(a);if(!a.raster)return Error("The raster input to identity function is invalid.");
+this.rasterInfo=d.mixin(a.raster,{});return!0},read2D:function(a){return a.raster},readGL:function(a){this._initializeProgram({fragment:e.identity,fragmentName:"identity"});a=this._setupTextureData(a.raster);var b=this.bindFrameBuffer(),c=this.gl;c.bindTexture(c.TEXTURE_2D,a.texture);this._drawGL();return{extent:a.extent,texture:b.texture}}})});
